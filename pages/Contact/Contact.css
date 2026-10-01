@@ -1,0 +1,843 @@
+/* =========================================================
+   CONTACT PAGE
+========================================================= */
+
+.contact-page {
+    padding-top: var(--header-height);
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   ELEMENT COMMUN
+========================================================= */
+
+.contact-page .section-label {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 38px;
+}
+
+.contact-page .section-label span {
+    display: block;
+    width: 48px;
+    height: 3px;
+    background: var(--blue);
+}
+
+.contact-page .section-label strong {
+    color: var(--text-dark);
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+/* =========================================================
+   HERO CONTACT
+========================================================= */
+
+.contact-hero {
+    position: relative;
+
+    min-height: calc(100vh - var(--header-height));
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-image: url("../../images/contact/hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Voile pour rendre le texte lisible */
+.contact-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(244, 248, 252, 0.98) 0%,
+            rgba(244, 248, 252, 0.94) 28%,
+            rgba(244, 248, 252, 0.65) 48%,
+            rgba(244, 248, 252, 0.08) 75%,
+            rgba(244, 248, 252, 0) 100%
+        );
+
+    z-index: 1;
+}
+
+.contact-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 850px;
+
+    padding: 90px 5vw;
+}
+
+.contact-hero-content h1 {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #082d52;
+
+    font-size: clamp(60px, 6vw, 105px);
+    line-height: .95;
+
+    letter-spacing: -4px;
+    font-weight: 800;
+}
+
+.contact-hero-content h1 span {
+    display: block;
+    color: var(--blue);
+}
+
+.contact-hero-content p {
+    max-width: 620px;
+
+    margin: 35px 0 40px;
+
+    color: #526d87;
+
+    font-size: 21px;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.contact-button {
+    width: fit-content;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+
+    padding: 21px 34px;
+
+    background: var(--blue);
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    border-radius: 8px;
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        box-shadow .3s ease;
+}
+
+.contact-button span {
+    font-size: 24px;
+}
+
+.contact-button:hover {
+    background: var(--blue-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(8, 120, 249, .22);
+}
+
+
+/* =========================================================
+   COORDONNÉES
+========================================================= */
+
+.contact-info {
+    background: #f2f7fd;
+    padding: 105px 5vw 110px;
+}
+
+.contact-info-intro {
+    max-width: 1000px;
+}
+
+.contact-info-intro h2,
+.contact-location h2 {
+    margin: 0;
+
+    color: #082d52;
+
+    font-size: clamp(50px, 5vw, 78px);
+    line-height: 1;
+    letter-spacing: -3px;
+    font-weight: 800;
+}
+
+.contact-info-intro h2 span,
+.contact-location h2 span {
+    display: block;
+    color: var(--blue);
+}
+
+.contact-info-intro p {
+    max-width: 950px;
+
+    margin: 35px 0 75px;
+
+    color: #627a92;
+
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   CONTACT CARDS
+========================================================= */
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.contact-card {
+    min-height: 245px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+
+    padding: 40px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3eaf2;
+    border-radius: 16px;
+
+    box-shadow: 0 12px 35px rgba(17, 55, 88, .04);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 45px rgba(17, 55, 88, .10);
+}
+
+.contact-icon {
+    flex: 0 0 80px;
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--blue);
+    border-radius: 50%;
+}
+
+.contact-icon svg {
+    width: 36px;
+    height: 36px;
+
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.contact-card-content {
+    padding-top: 3px;
+}
+
+.contact-card-label {
+    display: block;
+
+    margin-bottom: 13px;
+
+    color: var(--blue);
+
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.contact-card h3 {
+    margin: 0 0 12px;
+
+    color: #082d52;
+
+    font-size: 26px;
+    line-height: 1.25;
+}
+
+.contact-card p {
+    margin: 0;
+
+    color: #6b8197;
+
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.contact-card a {
+    color: inherit;
+    text-decoration: none;
+    transition: color .25s ease;
+}
+
+.contact-card a:hover {
+    color: var(--blue);
+}
+
+
+/* =========================================================
+   LOCALISATION
+========================================================= */
+
+.contact-location {
+    display: grid;
+    grid-template-columns: 42% 58%;
+
+    gap: 70px;
+
+    padding: 105px 5vw;
+
+    background: #ffffff;
+}
+
+.location-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location-content > p {
+    max-width: 670px;
+
+    margin: 38px 0 42px;
+
+    color: #627a92;
+
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.location-address {
+    max-width: 680px;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    padding: 30px 28px;
+
+    background: #f2f7fd;
+
+    border-radius: 14px;
+}
+
+.location-icon {
+    flex: 0 0 68px;
+
+    width: 68px;
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--blue);
+
+    border-radius: 50%;
+}
+
+.location-icon svg {
+    width: 31px;
+    height: 31px;
+
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.location-address strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #082d52;
+
+    font-size: 20px;
+}
+
+.location-address p {
+    margin: 0;
+
+    color: #6b8197;
+
+    font-size: 17px;
+    line-height: 1.55;
+}
+
+.maps-link {
+    width: fit-content;
+
+    margin-top: 35px;
+
+    color: var(--blue);
+
+    font-size: 19px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: transform .25s ease;
+}
+
+.maps-link span {
+    margin-left: 8px;
+    font-size: 22px;
+}
+
+.maps-link:hover {
+    transform: translateX(5px);
+}
+
+.location-map {
+    min-height: 640px;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    box-shadow: 0 15px 45px rgba(17, 55, 88, .12);
+}
+
+.location-map iframe {
+    width: 100%;
+    height: 100%;
+
+    min-height: 640px;
+
+    display: block;
+
+    border: 0;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.contact-cta {
+    position: relative;
+
+    min-height: 380px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-image: url("../../images/contact/cta.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-cta-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 39, 70, .96),
+            rgba(3, 64, 105, .82)
+        );
+}
+
+.contact-cta-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    padding: 75px 5vw;
+}
+
+.cta-brand {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #52a9ff;
+
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.contact-cta h2 {
+    margin: 0 0 15px;
+
+    color: #ffffff;
+
+    font-size: clamp(42px, 4vw, 64px);
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.contact-cta p {
+    max-width: 800px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, .88);
+
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    flex: 0 0 auto;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 24px 35px;
+
+    background: #ffffff;
+    color: #082d52;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    transition:
+        transform .3s ease,
+        background .3s ease;
+}
+
+.cta-button span {
+    font-size: 23px;
+}
+
+.cta-button:hover {
+    transform: translateY(-4px);
+    background: #f2f7fd;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .contact-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-hero-content {
+        min-height: 620px;
+        padding: 80px 7vw;
+    }
+
+    .contact-hero-image {
+        min-height: 500px;
+    }
+
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-location {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .location-map,
+    .location-map iframe {
+        min-height: 500px;
+    }
+
+    .contact-cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .contact-page {
+        padding-top: var(--header-height);
+    }
+
+
+    /* =====================================================
+       LABEL
+    ===================================================== */
+
+    .contact-page .section-label {
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+    .contact-page .section-label span {
+        width: 35px;
+        height: 2px;
+    }
+
+    .contact-page .section-label strong {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .contact-hero {
+        min-height: 650px;
+
+        display: flex;
+        align-items: center;
+
+        background-image:
+            url("../../images/contact/hero.jpg");
+
+        background-size: cover;
+
+        /*
+         * Ajuste la position de l'image
+         * pour garder les ouvriers visibles
+         */
+        background-position: 65% center;
+    }
+
+    .contact-hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(244, 248, 252, .98) 0%,
+                rgba(244, 248, 252, .93) 38%,
+                rgba(244, 248, 252, .68) 65%,
+                rgba(244, 248, 252, .20) 100%
+            );
+    }
+
+    .contact-hero-content {
+        width: 100%;
+        min-height: auto;
+
+        padding: 70px 24px;
+    }
+
+    .contact-hero-content h1 {
+        max-width: 500px;
+
+        font-size: 56px;
+        line-height: .96;
+
+        letter-spacing: -2.5px;
+    }
+
+    .contact-hero-content p {
+        max-width: 450px;
+
+        margin: 28px 0 32px;
+
+        font-size: 17px;
+        line-height: 1.65;
+    }
+
+
+    /* =====================================================
+       BOUTON
+    ===================================================== */
+
+    .contact-button {
+        padding: 18px 25px;
+
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       COORDONNÉES
+    ===================================================== */
+
+    .contact-info {
+        padding: 70px 24px;
+    }
+
+    .contact-info-intro h2,
+    .contact-location h2 {
+        font-size: 48px;
+        line-height: 1;
+
+        letter-spacing: -2px;
+    }
+
+    .contact-info-intro p,
+    .location-content > p {
+        margin: 25px 0 45px;
+
+        font-size: 17px;
+        line-height: 1.65;
+    }
+
+
+    /* =====================================================
+       CARTES CONTACT
+    ===================================================== */
+
+    .contact-card {
+        min-height: auto;
+
+        gap: 20px;
+
+        padding: 27px 22px;
+
+        border-radius: 12px;
+    }
+
+    .contact-icon {
+        flex: 0 0 62px;
+
+        width: 62px;
+        height: 62px;
+    }
+
+    .contact-icon svg {
+        width: 29px;
+        height: 29px;
+    }
+
+    .contact-card-label {
+        font-size: 13px;
+    }
+
+    .contact-card h3 {
+        font-size: 21px;
+    }
+
+    .contact-card p {
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+
+    /* =====================================================
+       LOCALISATION
+    ===================================================== */
+
+    .contact-location {
+        padding: 70px 24px;
+
+        gap: 40px;
+    }
+
+    .location-address {
+        padding: 22px;
+
+        gap: 18px;
+    }
+
+    .location-icon {
+        flex: 0 0 58px;
+
+        width: 58px;
+        height: 58px;
+    }
+
+    .location-address strong {
+        font-size: 17px;
+    }
+
+    .location-address p {
+        font-size: 15px;
+    }
+
+    .location-map,
+    .location-map iframe {
+        min-height: 400px;
+    }
+
+
+    /* =====================================================
+       CTA
+    ===================================================== */
+
+    .contact-cta {
+        min-height: 450px;
+    }
+
+    .contact-cta-content {
+        padding: 60px 24px;
+
+        gap: 35px;
+    }
+
+    .contact-cta h2 {
+        font-size: 43px;
+    }
+
+    .contact-cta p {
+        font-size: 17px;
+    }
+
+    .cta-button {
+        width: 100%;
+
+        justify-content: center;
+
+        padding: 20px;
+    }
+}
+/* =========================================================
+   ANIMATION JS
+========================================================= */
+
+.contact-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.contact-visible {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+}

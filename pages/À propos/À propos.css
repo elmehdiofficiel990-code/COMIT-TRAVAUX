@@ -1,0 +1,938 @@
+/* =========================================================
+   PAGE À PROPOS - COMIT TRAVAUX
+========================================================= */
+
+.about-page {
+    --about-blue: #0878f9;
+    --about-dark: #062b4d;
+    --about-text: #536b82;
+    --about-black: #172b3f;
+    --about-light: #f7f9fc;
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.about-page *,
+.about-page *::before,
+.about-page *::after {
+    box-sizing: border-box;
+}
+
+.about-page {
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-container {
+    width: min(1240px, calc(100% - 80px));
+    margin: 0 auto;
+}
+
+.about-page img {
+    display: block;
+    width: 100%;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.section-title {
+    color: var(--about-blue);
+
+    font-size: 15px;
+    font-weight: 800;
+
+    letter-spacing: 5px;
+}
+
+.section-title.light {
+    color: #65aaff;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.about-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 13px 0;
+
+    background: var(--about-blue);
+    color: white;
+
+    font-size: 18px;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.about-btn:hover {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.about-hero {
+    position: relative;
+
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.about-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background:
+        url("../../images/a-propos/hero.jpg")
+        center / cover no-repeat;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(6, 43, 77, 0.95) 0%,
+            rgba(6, 43, 77, 0.78) 42%,
+            rgba(6, 43, 77, 0.20) 78%,
+            rgba(6, 43, 77, 0.05)
+        );
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.about-label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    letter-spacing: 5px;
+}
+
+.about-label span {
+    width: 62px;
+    height: 3px;
+
+    background: var(--about-blue);
+}
+
+.about-hero h1 {
+    max-width: 850px;
+
+    margin: 45px 0 35px;
+
+    color: white;
+
+    font-size: clamp(58px, 6vw, 94px);
+    line-height: 1.03;
+
+    letter-spacing: -3px;
+}
+
+.about-hero h1 span {
+    color: var(--about-blue);
+}
+
+.about-hero p {
+    max-width: 850px;
+
+    margin-bottom: 40px;
+
+    color: white;
+
+    font-size: 21px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   PRESENTATION
+========================================================= */
+
+.presentation {
+    padding: 120px 0 140px;
+
+    background: white;
+}
+
+.presentation-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.presentation-text h2 {
+    margin: 35px 0;
+
+    color: var(--about-black);
+
+    font-size: clamp(45px, 4.5vw, 70px);
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+}
+
+.presentation-text h2 span {
+    color: var(--about-blue);
+}
+
+.presentation-text > p {
+    margin-bottom: 30px;
+
+    color: var(--about-text);
+
+    font-size: 20px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   PRESENTATION POINTS
+========================================================= */
+
+.presentation-points {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    margin-top: 50px;
+}
+
+.presentation-point {
+    display: flex;
+    gap: 16px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #dce4ec;
+}
+
+.presentation-point > span {
+    color: var(--about-blue);
+
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.presentation-point h3 {
+    margin: 0 0 10px;
+
+    color: var(--about-black);
+
+    font-size: 18px;
+}
+
+.presentation-point p {
+    margin: 0;
+
+    color: var(--about-text);
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   PRESENTATION IMAGE
+========================================================= */
+
+.presentation-image {
+    position: relative;
+
+    padding: 30px 30px 0 0;
+}
+
+.presentation-image img {
+    position: relative;
+    z-index: 2;
+
+    height: 590px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.image-decoration {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 135px;
+    height: 135px;
+
+    background: #e7f1ff;
+
+    border-radius: 15px;
+}
+
+.presentation-card {
+    position: absolute;
+    z-index: 3;
+
+    right: 0;
+    bottom: 35px;
+
+    width: 375px;
+
+    padding: 32px;
+
+    background: var(--about-dark);
+
+    border-radius: 12px;
+
+    color: white;
+}
+
+.presentation-card strong {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 22px;
+}
+
+.presentation-card span {
+    color: #d9e5f0;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   ENGAGEMENTS
+========================================================= */
+
+.engagements {
+    position: relative;
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.engagements-bg {
+    position: absolute;
+    inset: 0;
+
+    background:
+        url("../../images/a-propos/engagements.jpg")
+        center / cover no-repeat;
+}
+
+.engagements-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 28, 49, 0.97),
+            rgba(3, 28, 49, 0.65)
+        );
+}
+
+.engagements-content {
+    position: relative;
+    z-index: 2;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.engagements h2 {
+    margin: 35px 0;
+
+    color: white;
+
+    font-size: clamp(48px, 5vw, 72px);
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+}
+
+.engagements h2 span {
+    color: var(--about-blue);
+}
+
+.engagement-description {
+    max-width: 1050px;
+
+    margin-bottom: 55px;
+
+    color: white;
+
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   ENGAGEMENT CARDS
+========================================================= */
+
+.engagement-cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.engagement-card {
+    display: flex;
+    gap: 20px;
+
+    min-height: 145px;
+
+    padding: 28px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 10px;
+}
+
+.check {
+    flex-shrink: 0;
+
+    width: 57px;
+    height: 57px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--about-blue);
+    border-radius: 50%;
+
+    color: var(--about-blue);
+
+    font-size: 29px;
+}
+
+.engagement-card h3 {
+    margin: 4px 0 10px;
+
+    color: white;
+
+    font-size: 19px;
+}
+
+.engagement-card p {
+    margin: 0;
+
+    color: #d6e0ea;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   PRESENCE
+========================================================= */
+
+.presence {
+    padding: 110px 0;
+
+    background: #f7f9fc;
+}
+
+.presence-grid {
+    display: grid;
+
+    grid-template-columns: 0.95fr 1.05fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.presence-text h2 {
+    margin: 35px 0;
+
+    color: var(--about-black);
+
+    font-size: clamp(48px, 4.8vw, 70px);
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+}
+
+.presence-text h2 span {
+    display: block;
+
+    color: var(--about-blue);
+}
+
+.presence-text > p {
+    margin-bottom: 28px;
+
+    color: var(--about-text);
+
+    font-size: 19px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   PRESENCE CARDS
+========================================================= */
+
+.presence-cards {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    margin-top: 45px;
+}
+
+.presence-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    min-height: 135px;
+
+    padding: 23px;
+
+    background: white;
+
+    border: 1px solid #dde6ef;
+
+    border-radius: 10px;
+}
+
+.presence-check {
+    flex-shrink: 0;
+
+    width: 57px;
+    height: 57px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf3ff;
+
+    border-radius: 50%;
+
+    color: var(--about-blue);
+
+    font-size: 26px;
+}
+
+.presence-card h3 {
+    margin: 0 0 8px;
+
+    color: var(--about-black);
+
+    font-size: 17px;
+}
+
+.presence-card p {
+    margin: 0;
+
+    color: var(--about-text);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PRESENCE IMAGE
+========================================================= */
+
+.presence-image {
+    position: relative;
+}
+
+.presence-image img {
+    height: 690px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.presence-badge {
+    position: absolute;
+
+    right: 35px;
+    bottom: 35px;
+
+    min-width: 230px;
+
+    padding: 35px;
+
+    background: var(--about-dark);
+
+    border-radius: 12px;
+
+    color: white;
+}
+
+.presence-badge strong {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--about-blue);
+
+    font-size: 31px;
+}
+
+.presence-badge span {
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.about-cta {
+    position: relative;
+
+    min-height: 570px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.cta-bg {
+    position: absolute;
+    inset: 0;
+
+    background:
+        url("../../images/a-propos/devis.jpg")
+        center / cover no-repeat;
+}
+
+.cta-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 29, 52, 0.94),
+            rgba(3, 29, 52, 0.55)
+        );
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.cta-content h2 {
+    margin: 35px 0;
+
+    color: white;
+
+    font-size: clamp(50px, 5.5vw, 80px);
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+}
+
+.cta-content h2 span {
+    color: var(--about-blue);
+}
+
+.cta-content > p {
+    max-width: 950px;
+
+    margin-bottom: 40px;
+
+    color: white;
+
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .about-container {
+        width: min(100% - 50px, 900px);
+    }
+
+    .presentation-grid,
+    .presence-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .presentation-image,
+    .presence-image {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .engagement-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .about-container {
+        width: calc(100% - 36px);
+    }
+
+
+    /* HERO */
+
+    .about-hero {
+        min-height: 700px;
+    }
+
+    .hero-container {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    .about-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .about-label span {
+        width: 40px;
+    }
+
+    .about-hero h1 {
+        margin: 30px 0;
+
+        font-size: 43px;
+        line-height: 1.06;
+
+        letter-spacing: -1.5px;
+    }
+
+    .about-hero p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+
+    /* PRESENTATION */
+
+    .presentation {
+        padding: 80px 0;
+    }
+
+    .presentation-text h2 {
+        margin: 25px 0 30px;
+
+        font-size: 42px;
+    }
+
+    .presentation-text > p {
+        font-size: 17px;
+        line-height: 1.75;
+    }
+
+    .presentation-points {
+        grid-template-columns: 1fr;
+    }
+
+    .presentation-image {
+        padding: 20px 15px 0 0;
+    }
+
+    .presentation-image img {
+        height: 430px;
+    }
+
+    .image-decoration {
+        width: 80px;
+        height: 80px;
+    }
+
+    .presentation-card {
+        width: calc(100% - 30px);
+
+        right: 0;
+        bottom: 20px;
+
+        padding: 22px;
+    }
+
+
+    /* ENGAGEMENTS */
+
+    .engagements-content {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .engagements h2 {
+        margin: 25px 0;
+
+        font-size: 42px;
+    }
+
+    .engagement-description {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .engagement-card {
+        padding: 22px;
+    }
+
+
+    /* PRESENCE */
+
+    .presence {
+        padding: 80px 0;
+    }
+
+    .presence-text h2 {
+        margin: 25px 0 30px;
+
+        font-size: 42px;
+    }
+
+    .presence-text > p {
+        font-size: 17px;
+        line-height: 1.75;
+    }
+
+    .presence-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .presence-image img {
+        height: 480px;
+    }
+
+    .presence-badge {
+        right: 15px;
+        bottom: 15px;
+
+        min-width: 180px;
+
+        padding: 24px;
+    }
+
+    .presence-badge strong {
+        font-size: 25px;
+    }
+
+
+    /* CTA */
+
+    .about-cta {
+        min-height: 500px;
+    }
+
+    .cta-content {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .cta-content h2 {
+        margin: 25px 0;
+
+        font-size: 48px;
+    }
+
+    .cta-content > p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================================================
+   PETITS TELEPHONES
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .about-container {
+        width: calc(100% - 28px);
+    }
+
+    .about-hero h1 {
+        font-size: 39px;
+    }
+
+    .presentation-text h2,
+    .engagements h2,
+    .presence-text h2 {
+        font-size: 37px;
+    }
+
+    .presentation-image img {
+        height: 360px;
+    }
+
+    .presence-image img {
+        height: 400px;
+    }
+}

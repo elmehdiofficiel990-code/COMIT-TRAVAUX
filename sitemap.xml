@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Page d'entrée -->
+    <url>
+        <loc>https://comittravaux.com/</loc>
+    </url>
+
+    <!-- Accueil -->
+    <url>
+        <loc>https://comittravaux.com/pages/Accueil/accueil.html</loc>
+    </url>
+
+    <!-- À propos -->
+    <url>
+        <loc>https://comittravaux.com/pages/%C3%80%20propos/%C3%80%20propos.html</loc>
+    </url>
+
+    <!-- Climatisation -->
+    <url>
+        <loc>https://comittravaux.com/pages/Climatisation/Climatisation.html</loc>
+    </url>
+
+    <!-- Construction -->
+    <url>
+        <loc>https://comittravaux.com/pages/construction/construction.html</loc>
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://comittravaux.com/pages/Contact/Contact.html</loc>
+    </url>
+
+    <!-- Électricité -->
+    <url>
+        <loc>https://comittravaux.com/pages/electricite/electricite.html</loc>
+    </url>
+
+    <!-- Plomberie -->
+    <url>
+        <loc>https://comittravaux.com/pages/Plomberie/Plomberie.html</loc>
+    </url>
+
+</urlset>

@@ -1,0 +1,1200 @@
+/* =========================================================
+   CONSTRUCTION - COMIT TRAVAUX
+========================================================= */
+
+.construction-page {
+    --construction-blue: #0878f9;
+    --construction-dark: #062b4d;
+    --construction-text: #536b82;
+    --construction-black: #101828;
+    --construction-light: #f6f8fa;
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.construction-page *,
+.construction-page *::before,
+.construction-page *::after {
+    box-sizing: border-box;
+}
+
+.construction-page {
+    width: 100%;
+    overflow: hidden;
+}
+
+.construction-container {
+    width: min(1240px, calc(100% - 80px));
+    margin: 0 auto;
+}
+
+.construction-page img {
+    display: block;
+    width: 100%;
+}
+
+
+/* =========================================================
+   LABELS
+========================================================= */
+
+.construction-section-label {
+    color: #075f91;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    letter-spacing: 5px;
+}
+
+.construction-section-label.light {
+    color: #65adff;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.construction-hero {
+    position: relative;
+
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.construction-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background:
+        url("../../images/construction/hero.jpg")
+        center / cover no-repeat;
+}
+
+.construction-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 24, 42, 0.94) 0%,
+            rgba(3, 24, 42, 0.68) 48%,
+            rgba(3, 24, 42, 0.10) 100%
+        );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.construction-label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    letter-spacing: 5px;
+}
+
+.construction-label span {
+    width: 68px;
+    height: 3px;
+
+    background: var(--construction-blue);
+}
+
+.construction-hero h1 {
+    margin: 45px 0 25px;
+
+    color: white;
+
+    font-size: clamp(65px, 7vw, 112px);
+    line-height: 1;
+
+    font-weight: 800;
+    letter-spacing: -3px;
+}
+
+.construction-hero p {
+    max-width: 900px;
+
+    margin-bottom: 45px;
+
+    color: white;
+
+    font-size: 23px;
+    line-height: 1.8;
+}
+
+.construction-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 28px;
+
+    padding: 26px 36px;
+
+    background: #126c9b;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.construction-btn:hover {
+    background: var(--construction-blue);
+}
+
+.construction-btn span {
+    font-size: 25px;
+}
+
+
+/* =========================================================
+   PRESENTATION
+========================================================= */
+
+.construction-presentation {
+    padding: 90px 0 45px;
+
+    background: white;
+}
+
+.presentation-grid {
+    display: grid;
+
+    grid-template-columns: 0.95fr 1.05fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+.presentation-text h2 {
+    max-width: 650px;
+
+    margin: 30px 0 35px;
+
+    color: var(--construction-black);
+
+    font-size: clamp(50px, 4.8vw, 72px);
+    line-height: 1.12;
+
+    letter-spacing: -2px;
+}
+
+.presentation-text h2 span {
+    display: block;
+
+    color: #126294;
+}
+
+.blue-line {
+    width: 82px;
+    height: 4px;
+
+    margin-bottom: 40px;
+
+    background: #126294;
+}
+
+.presentation-text p {
+    margin-bottom: 32px;
+
+    color: var(--construction-text);
+
+    font-size: 20px;
+    line-height: 1.9;
+}
+
+.presentation-text strong {
+    color: #101828;
+}
+
+
+/* =========================================================
+   PRESENTATION IMAGE
+========================================================= */
+
+.presentation-image {
+    position: relative;
+
+    padding: 0 20px 0 0;
+}
+
+.presentation-image img {
+    height: 705px;
+
+    object-fit: cover;
+}
+
+.presentation-badge {
+    position: absolute;
+
+    left: 35px;
+    bottom: 40px;
+
+    width: 335px;
+
+    padding: 27px 34px;
+
+    background: rgba(3, 30, 51, 0.92);
+
+    color: white;
+}
+
+.presentation-badge span {
+    display: block;
+
+    margin-bottom: 13px;
+
+    color: #70b9ff;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 4px;
+}
+
+.presentation-badge strong {
+    font-size: 21px;
+}
+
+
+/* =========================================================
+   PRESTATIONS
+========================================================= */
+
+.prestations {
+    padding: 100px 0 120px;
+
+    background: #f5f7f9;
+}
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 75px;
+}
+
+.section-heading h2 {
+    margin: 30px 0;
+
+    color: var(--construction-black);
+
+    font-size: clamp(48px, 5vw, 70px);
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+}
+
+.section-heading p {
+    margin: 0 auto;
+
+    color: var(--construction-text);
+
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PRESTATION CARDS
+========================================================= */
+
+.prestations-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 26px;
+}
+
+.prestation-card {
+    min-height: 355px;
+
+    padding: 45px;
+
+    background: white;
+
+    border: 1px solid #dce3e9;
+
+    transition: 0.3s ease;
+}
+
+.prestation-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #9fcaf0;
+
+    box-shadow: 0 18px 45px rgba(6, 43, 77, 0.08);
+}
+
+.prestation-icon {
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 40px;
+
+    background: #edf5fa;
+
+    font-size: 32px;
+}
+
+.prestation-card h3 {
+    margin-bottom: 22px;
+
+    color: #081a2d;
+
+    font-size: 25px;
+    line-height: 1.35;
+}
+
+.prestation-card p {
+    margin: 0;
+
+    color: var(--construction-text);
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   METHOD
+========================================================= */
+
+.construction-method {
+    position: relative;
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.method-bg {
+    position: absolute;
+    inset: 0;
+
+    background:
+        url("../../images/construction/presentation.jpg")
+        center / cover no-repeat;
+}
+
+.method-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(3, 32, 54, 0.91);
+}
+
+.method-content {
+    position: relative;
+    z-index: 2;
+
+    padding: 95px 0;
+
+    text-align: center;
+}
+
+.method-content h2 {
+    margin: 30px 0;
+
+    color: white;
+
+    font-size: clamp(45px, 5vw, 70px);
+    line-height: 1.1;
+}
+
+.method-description {
+    max-width: 1000px;
+
+    margin: 0 auto 85px;
+
+    color: white;
+
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   METHOD STEPS
+========================================================= */
+
+.method-steps {
+    display: grid;
+
+    grid-template-columns:
+        1fr 70px
+        1fr 70px
+        1fr 70px
+        1fr 70px
+        1fr;
+
+    align-items: start;
+}
+
+.method-step {
+    text-align: center;
+}
+
+.method-icon {
+    width: 108px;
+    height: 108px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 30px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    font-size: 35px;
+}
+
+.method-step h3 {
+    margin-bottom: 15px;
+
+    color: white;
+
+    font-size: 23px;
+}
+
+.method-step p {
+    max-width: 190px;
+
+    margin: 0 auto;
+
+    color: #dce7ef;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.method-arrow {
+    padding-top: 48px;
+
+    color: white;
+
+    font-size: 40px;
+}
+
+
+/* =========================================================
+   REALISATIONS
+========================================================= */
+
+.realisations {
+    padding: 100px 0 120px;
+
+    background: #f5f7f9;
+}
+
+.realisations-grid {
+    display: grid;
+
+    grid-template-columns: 1.25fr 0.9fr 0.9fr;
+
+    grid-template-rows: 375px 375px;
+
+    gap: 22px;
+}
+
+.realisation {
+    overflow: hidden;
+}
+
+.realisation img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.realisation:hover img {
+    transform: scale(1.04);
+}
+
+.realisation-large {
+    grid-row: span 2;
+}
+
+
+/* =========================================================
+   TRUST
+========================================================= */
+
+.trust {
+    padding: 105px 0 120px;
+
+    background: white;
+}
+
+.trust-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 55px;
+}
+
+.trust-item {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 25px;
+}
+
+.trust-icon {
+    flex-shrink: 0;
+
+    width: 85px;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #edf5fa;
+
+    border-radius: 50%;
+
+    font-size: 30px;
+}
+
+.trust-item h3 {
+    margin: 5px 0 15px;
+
+    color: #07182a;
+
+    font-size: 23px;
+}
+
+.trust-item p {
+    margin: 0;
+
+    color: var(--construction-text);
+
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.construction-cta {
+    position: relative;
+
+    min-height: 610px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.cta-bg {
+    position: absolute;
+    inset: 0;
+
+    background:
+        url("../../images/construction/realisation-4.jpg")
+        center / cover no-repeat;
+}
+
+.cta-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 29, 50, 0.95),
+            rgba(3, 29, 50, 0.62)
+        );
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+
+    padding: 100px 0;
+}
+
+.cta-content h2 {
+    max-width: 850px;
+
+    margin: 30px 0;
+
+    color: white;
+
+    font-size: clamp(50px, 5.5vw, 80px);
+    line-height: 1.08;
+
+    letter-spacing: -3px;
+}
+
+.cta-content h2 span {
+    color: white;
+}
+
+.cta-content > p {
+    max-width: 900px;
+
+    margin-bottom: 40px;
+
+    color: white;
+
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+
+    padding: 25px 36px;
+
+    background: white;
+
+    color: #081a2d;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background: var(--construction-blue);
+    color: white;
+}
+
+.cta-button span {
+    font-size: 25px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .construction-container {
+        width: min(100% - 50px, 900px);
+    }
+
+    .presentation-grid {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .presentation-image {
+        max-width: 750px;
+        margin: auto;
+    }
+
+    .prestations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .method-steps {
+        grid-template-columns: repeat(5, 1fr);
+
+        gap: 20px;
+    }
+
+    .method-arrow {
+        display: none;
+    }
+
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 45px;
+    }
+
+    .realisations-grid {
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-rows: 350px 350px;
+    }
+
+    .realisation-large {
+        grid-row: span 2;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .construction-container {
+        width: calc(100% - 32px);
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .construction-hero {
+        min-height: calc(100vh - 60px);
+    }
+
+    .hero-content {
+        padding-top: 50px;
+        padding-bottom: 45px;
+    }
+
+    .construction-label {
+        gap: 14px;
+
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .construction-label span {
+        width: 42px;
+        height: 3px;
+    }
+
+    .construction-hero h1 {
+        margin: 32px 0 22px;
+
+        /*
+         * IMPORTANT :
+         * taille adaptée aux petits téléphones
+         */
+        font-size: 40px;
+
+        line-height: 1;
+
+        letter-spacing: -1.5px;
+
+        white-space: nowrap;
+    }
+
+    .construction-hero p {
+        max-width: 320px;
+
+        margin-bottom: 32px;
+
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .construction-btn {
+        width: auto;
+
+        padding: 18px 22px;
+
+        gap: 20px;
+
+        font-size: 15px;
+    }
+
+    .construction-btn span {
+        font-size: 22px;
+    }
+
+
+    /* =========================
+       PRESENTATION
+    ========================= */
+
+    .construction-presentation {
+        padding: 70px 0;
+    }
+
+    .construction-section-label {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .presentation-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .presentation-text h2 {
+        margin: 25px 0 28px;
+
+        font-size: 40px;
+
+        line-height: 1.1;
+
+        letter-spacing: -1px;
+    }
+
+    .blue-line {
+        width: 65px;
+
+        margin-bottom: 30px;
+    }
+
+    .presentation-text p {
+        margin-bottom: 25px;
+
+        font-size: 17px;
+
+        line-height: 1.75;
+    }
+
+    .presentation-image {
+        padding: 0;
+    }
+
+    .presentation-image img {
+        width: 100%;
+        height: 400px;
+
+        object-fit: cover;
+    }
+
+    .presentation-badge {
+        left: 15px;
+        right: 15px;
+        bottom: 18px;
+
+        width: auto;
+
+        padding: 20px;
+    }
+
+    .presentation-badge span {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .presentation-badge strong {
+        font-size: 18px;
+    }
+
+
+    /* =========================
+       PRESTATIONS
+    ========================= */
+
+    .prestations {
+        padding: 70px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 45px;
+    }
+
+    .section-heading h2 {
+        margin: 22px 0;
+
+        font-size: 40px;
+
+        line-height: 1.1;
+
+        letter-spacing: -1px;
+    }
+
+    .section-heading p {
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+    .prestations-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .prestation-card {
+        min-height: auto;
+
+        padding: 30px 25px;
+    }
+
+    .prestation-icon {
+        width: 62px;
+        height: 62px;
+
+        margin-bottom: 25px;
+
+        font-size: 28px;
+    }
+
+    .prestation-card h3 {
+        margin-bottom: 15px;
+
+        font-size: 21px;
+    }
+
+    .prestation-card p {
+        font-size: 16px;
+
+        line-height: 1.7;
+    }
+
+
+    /* =========================
+       NOTRE MÉTHODE
+    ========================= */
+
+    .construction-method {
+        min-height: auto;
+    }
+
+    .method-content {
+        padding: 70px 0;
+    }
+
+    .method-content h2 {
+        margin: 25px 0;
+
+        font-size: 39px;
+
+        line-height: 1.1;
+
+        letter-spacing: -1px;
+    }
+
+    .method-description {
+        margin-bottom: 45px;
+
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+    .method-steps {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .method-arrow {
+        display: none;
+    }
+
+    .method-icon {
+        width: 80px;
+        height: 80px;
+
+        margin-bottom: 20px;
+
+        font-size: 30px;
+    }
+
+    .method-step h3 {
+        font-size: 21px;
+    }
+
+    .method-step p {
+        font-size: 15px;
+    }
+
+
+    /* =========================
+       RÉALISATIONS
+    ========================= */
+
+    .realisations {
+        padding: 70px 0;
+    }
+
+    .realisations-grid {
+        grid-template-columns: 1fr;
+
+        grid-template-rows: repeat(4, 280px);
+
+        gap: 15px;
+    }
+
+    .realisation-large {
+        grid-row: auto;
+    }
+
+
+    /* =========================
+       POURQUOI NOUS
+    ========================= */
+
+    .trust {
+        padding: 70px 0;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .trust-item {
+        gap: 16px;
+    }
+
+    .trust-icon {
+        width: 62px;
+        height: 62px;
+
+        font-size: 23px;
+    }
+
+    .trust-item h3 {
+        margin-top: 2px;
+
+        font-size: 20px;
+    }
+
+    .trust-item p {
+        font-size: 16px;
+
+        line-height: 1.7;
+    }
+
+
+    /* =========================
+       CTA FINAL
+    ========================= */
+
+    .construction-cta {
+        min-height: 520px;
+    }
+
+    .cta-content {
+        padding: 70px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 42px;
+
+        line-height: 1.1;
+
+        letter-spacing: -1px;
+    }
+
+    .cta-content > p {
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+    .cta-button {
+        padding: 19px 23px;
+
+        gap: 25px;
+
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   TRÈS PETITS ÉCRANS
+   iPhone SE / 375px
+========================================================= */
+
+@media (max-width: 390px) {
+
+    .construction-container {
+        width: calc(100% - 30px);
+    }
+
+    .construction-hero h1 {
+        /*
+         * CONSTRUCTION doit rester entièrement
+         * visible sur 375px
+         */
+        font-size: 35px;
+
+        letter-spacing: -1px;
+    }
+
+    .construction-hero p {
+        font-size: 16px;
+    }
+
+    .construction-btn {
+        padding: 17px 19px;
+
+        font-size: 14px;
+    }
+
+    .presentation-text h2,
+    .section-heading h2,
+    .method-content h2 {
+        font-size: 36px;
+    }
+
+    .cta-content h2 {
+        font-size: 38px;
+    }
+
+}
+/* =========================================================
+   PETITS TELEPHONES
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .construction-container {
+        width: calc(100% - 28px);
+    }
+
+    .construction-hero h1 {
+        font-size: 44px;
+    }
+
+    .presentation-text h2,
+    .section-heading h2,
+    .method-content h2 {
+        font-size: 38px;
+    }
+
+    .cta-content h2 {
+        font-size: 41px;
+    }
+}
