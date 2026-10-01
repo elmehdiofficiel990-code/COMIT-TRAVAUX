@@ -118,7 +118,7 @@ const HEADER_HTML = `
                 Notre présence
             </a>
 
-            <a href="${ROOT}pages/Contact/contact.html">
+            <a href="${ROOT}pages/Contact/Contact.html">
                 Contact
             </a>
 
@@ -127,7 +127,7 @@ const HEADER_HTML = `
 
         <!-- BOUTON DEVIS -->
         <a
-            href="${ROOT}pages/Contact/contact.html"
+            href="${ROOT}pages/Contact/Contact.html"
             class="header-cta"
         >
             <span>DEMANDER UN DEVIS</span>
@@ -210,14 +210,14 @@ const HEADER_HTML = `
         </a>
 
 
-        <a href="${ROOT}pages/Contact/contact.html">
+        <a href="${ROOT}pages/Contact/Contact.html">
             <span>Contact</span>
             <strong>›</strong>
         </a>
 
 
         <a
-            href="${ROOT}pages/Contact/contact.html"
+            href="${ROOT}pages/Contact/Contact.html"
             class="mobile-cta"
         >
             DEMANDER UN DEVIS
@@ -275,7 +275,7 @@ const FOOTER_HTML = `
                 Notre présence
             </a>
 
-            <a href="${ROOT}pages/Contact/contact.html">
+            <a href="${ROOT}pages/Contact/Contact.html">
                 Contact
             </a>
 
