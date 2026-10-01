@@ -77,7 +77,7 @@ const HEADER_HTML = `
                     </a>
 
 
-                    <a href="${ROOT}pages/Plomberie/plomberie.html">
+                    <a href="${ROOT}pages/Plomberie/Plomberie.html">
                         <span class="dropdown-icon plomberie-icon">
                             <svg viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M7 3v7a5 5 0 0 0 10 0V3M5 3h4M15 3h4M12 15v6M8 21h8"/>
@@ -183,7 +183,7 @@ const HEADER_HTML = `
                 <strong>›</strong>
             </a>
 
-            <a href="${ROOT}pages/Plomberie/plomberie.html">
+            <a href="${ROOT}pages/Plomberie/Plomberie.html">
                 <span class="mobile-domain-icon">⚙</span>
                 <span>Plomberie</span>
                 <strong>›</strong>
@@ -291,7 +291,7 @@ const FOOTER_HTML = `
                 Construction
             </a>
 
-            <a href="${ROOT}pages/Plomberie/plomberie.html">
+            <a href="${ROOT}pages/Plomberie/Plomberie.html">
                 Plomberie
             </a>
 
